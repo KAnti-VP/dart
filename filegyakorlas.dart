@@ -8,7 +8,7 @@ void main() {
 
   // 2. feladat
   List<String> poetryPart = getPoetryPart(content, 3);
-  print('\n 3. verssza: \n');
+  print('\n 3. versszak: \n');
   printContent(poetryPart);
   print('\n');
 
@@ -80,13 +80,13 @@ List<List<String>> getStudentsData(List<String> rows) {
     data.add(row.split(';'));
   }
   int lastName = 0;
-  int firestName = 1;
+  int firstName = 1;
   int className = 3;
 
   data.sort((a, b) {
     if (a[className] == (b[className])) {
       if (a[lastName] == (b[lastName])) {
-        return a[firestName].compareTo(b[firestName]);
+        return a[firstName].compareTo(b[firstName]);
       } else {
         return a[lastName].compareTo(b[lastName]);
       }
@@ -100,9 +100,9 @@ List<List<String>> getStudentsData(List<String> rows) {
 
 void printStudentsDetails(List<List<String>> students) {
   int lastName = 0;
-  int firestName = 1;
+  int firstName = 1;
   int className = 3;
   for (List<String> student in students) {
-    print('${student[className]} ${student[lastName]} ${student[firestName]}');
+    print('${student[className]} ${student[lastName]} ${student[firstName]}');
   }
 }
