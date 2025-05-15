@@ -18,7 +18,7 @@ String boredom(Map<String, String> staff) {
     score += departments[dep]!;
   }
   String result = 'kill me now';
-  if (score > 82 && score < 100) result = 'i can handle this';
+  if (score > 80 && score < 100) result = 'i can handle this';
   if (score >= 100) result = 'party time!!';
   return result;
 }
