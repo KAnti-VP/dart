@@ -2,6 +2,5 @@
 
 int nthSmallest(arr, pos) {
   arr.sort();
-  arr.reversed;
   return arr[pos - 1];
 }
