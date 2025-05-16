@@ -4,9 +4,9 @@ bool divisibleByThree(String str) {
   int number = 0;
   for (String digit in str.split('')) {
     number += int.parse(digit);
-    while (number - 3 > 0) {
+    while (number - 3 >= 0) {
       number -= 3;
     } 
   }
-  return number - 3 == 0;
+  return number == 0;
 }
